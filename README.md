@@ -8,7 +8,7 @@ Open the backend folder and type "mvn clean install package". This should build 
 Now type "java -jar target" and press tab twice. You should get something like this: "java -jar .\target\api-0.0.1-SNAPSHOT.jar" if you're in windows powershell.
 Press enter and the API should be up and running!
 ## terminalReact
-Open the frontend folder and open a terminal. Type "npm run start" to run the development server.
+Open the frontend folder and open a terminal. Type "npm install" to download and install all of the dependencies and then type "npm run start" to run the development server.
 Now checkout the application on http://localhost:3000. Have fun!
 
 # Testing
