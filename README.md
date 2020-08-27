@@ -1,6 +1,5 @@
 # TriviaApp
 Simple trivia app built for QuadSolutions
-
 # Setup
 Open two terminals both at the root of the project. We'll call them terminalAPI and terminalReact.
 ## terminalAPI
@@ -12,5 +11,8 @@ Open the frontend folder and open a terminal. Type "npm install" to download and
 Now checkout the application on http://localhost:3000. Have fun!
 
 # Testing
+## backend
 You can run the tests by going into the backend folder and opening a terminal. Now type "mvn clean install test".
 The tests should be running now!
+## Postman
+If you would like to checkout the API without the frontend. You can use Postman by copying this link, https://www.getpostman.com/collections/5452dafc8573bba3ecda, to Postman and checking out the available requests!
