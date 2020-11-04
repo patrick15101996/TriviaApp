@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class TriviaService {
-    private static Map<Long, String> questionAnswersMap = new HashMap<>();
+    private static final Map<Long, String> questionAnswersMap = new HashMap<>();
     private static long questionIdToAssign = 0;
 
     public String getCorrectAnswer(long id) {

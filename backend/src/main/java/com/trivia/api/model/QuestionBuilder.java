@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
 
+@Getter
 public class QuestionBuilder {
 
-    private long id;
+    private final long id;
     @JsonProperty("question")
     private String content;
     @JsonProperty("incorrect_answers")
@@ -19,30 +21,14 @@ public class QuestionBuilder {
         this.id = id;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
     public QuestionBuilder setContent(String content) {
         this.content = content;
         return this;
     }
 
-    public List<String> getIncorrectAnswers() {
-        return incorrectAnswers;
-    }
-
     public QuestionBuilder setIncorrectAnswers(List<String> incorrectAnswers) {
         this.incorrectAnswers = incorrectAnswers;
         return this;
-    }
-
-    public String getCorrectAnswer() {
-        return correctAnswer;
     }
 
     public QuestionBuilder setCorrectAnswer(String correctAnswer) {
